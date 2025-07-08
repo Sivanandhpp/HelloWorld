@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:helloworld/themecolor.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,13 +12,20 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Hello World",
+          "Hello World!",
           style: GoogleFonts.ubuntu(
-            color: ThemeColor.black,
-            fontSize: 26,
+            color: ThemeColor.white,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          ),
+        ),
+        backgroundColor: ThemeColor.purpleBG,
         centerTitle: true,
       ),
       body: SafeArea(
@@ -77,47 +85,62 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   height: 65,
                   margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                     
-                      color: ThemeColor.lightGrey,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
+                  decoration: BoxDecoration(
+                    color: ThemeColor.purpleBG,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       IconButton(
-                        icon: Image.asset('assets/images/linkedin.png',width: 40,height: 40),
-                        iconSize: 40,
+                        icon: FaIcon(
+                          FontAwesomeIcons.linkedin,
+                          color: ThemeColor.white,
+                          size: 35,
+                        ),
                         onPressed: () {
-                          // LinkedIn profile
-                          launchUrl(Uri.parse('https://www.linkedin.com/in/sivanandh/'));
+                          launchUrl(
+                            Uri.parse('https://www.linkedin.com/in/sivanandh/'),
+                          );
                         },
                       ),
                       SizedBox(width: 20),
                       IconButton(
-                        icon: Image.asset('assets/images/github.png',width: 40,height: 40,),
-                        iconSize: 40,
+                        icon: FaIcon(
+                          FontAwesomeIcons.github,
+                          color: ThemeColor.white,
+                          size: 35,
+                        ),
                         onPressed: () {
-                          // GitHub profile
-                          launchUrl(Uri.parse('https://github.com/sivanandhpp'));
+                          launchUrl(
+                            Uri.parse('https://github.com/sivanandhpp'),
+                          );
                         },
                       ),
                       SizedBox(width: 20),
                       IconButton(
-                        icon: Image.asset('assets/images/leetcode.png',width: 40,height: 40),
-                        iconSize: 40,
+                        icon: FaIcon(
+                          FontAwesomeIcons.code,
+                          color: ThemeColor.white,
+                          size: 35,
+                        ),
                         onPressed: () {
-                          // LeetCode profile
-                          launchUrl(Uri.parse('https://leetcode.com/sivanandh/'));
+                          launchUrl(
+                            Uri.parse('https://leetcode.com/sivanandh/'),
+                          );
                         },
                       ),
                       SizedBox(width: 20),
                       IconButton(
-                        icon: Image.asset('assets/images/website.png',width: 40,height: 40),
-                        iconSize: 40,
+                        icon: FaIcon(
+                          FontAwesomeIcons.globe,
+                          color: ThemeColor.white,
+                          size: 35,
+                        ),
                         onPressed: () {
-                          // Personal website
-                          launchUrl(Uri.parse('https://sivanandhpp.github.io/'));
+                          launchUrl(
+                            Uri.parse('https://sivanandhpp.github.io/'),
+                          );
                         },
                       ),
                     ],
