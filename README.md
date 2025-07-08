@@ -23,8 +23,8 @@ A cross-platform Flutter application showcasing a personal profile and social li
 ## Screenshots
 
 <!-- Add your screenshots to assets/images/ and reference them below -->
-![Home Screen](readme_screenshot.png)
-<!-- ![Another Screen](assets/images/screenshot_other.png) -->
+<img src="readme_screenshot.png" alt="Home Screen" width="300"/>
+<!-- <img src="assets/images/screenshot_other.png" alt="Another Screen" width="300"/> -->
 
 ## Getting Started
 
