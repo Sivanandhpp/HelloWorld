@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           "Hello World!",
           style: GoogleFonts.ubuntu(
             color: ThemeColor.white,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
                 Padding(
-                  padding: const EdgeInsets.all(40.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 60.0),
                   child: ClipOval(
                     child: Image(
                       image: AssetImage('assets/images/sivanandh.jpg'),
@@ -44,16 +44,16 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
+                SizedBox(height: 20),
                 Text(
                   "Sivanandh P P",
                   style: GoogleFonts.ubuntu(
                     color: ThemeColor.black,
-                    fontSize: 30,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 4),
                 Text(
                   "Mail ID: sivanandhpp@gmail.com",
                   style: GoogleFonts.ubuntu(
@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                SizedBox(height: 10),
+              SizedBox(height: 4),
                 Text(
                   "Phone No: +91 90727 08620",
                   style: GoogleFonts.ubuntu(
@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                SizedBox(height: 10),
+              SizedBox(height: 4),
                 Text(
                   "MCA at Jain University",
                   style: GoogleFonts.ubuntu(
@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.linkedin,
                           color: ThemeColor.white,
-                          size: 35,
+                          size: 32,
                         ),
                         onPressed: () {
                           launchUrl(
@@ -109,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.github,
                           color: ThemeColor.white,
-                          size: 35,
+                          size: 32,
                         ),
                         onPressed: () {
                           launchUrl(
@@ -122,7 +122,7 @@ class HomeScreen extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.code,
                           color: ThemeColor.white,
-                          size: 35,
+                          size: 32,
                         ),
                         onPressed: () {
                           launchUrl(
@@ -135,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                         icon: FaIcon(
                           FontAwesomeIcons.globe,
                           color: ThemeColor.white,
-                          size: 35,
+                          size: 32,
                         ),
                         onPressed: () {
                           launchUrl(

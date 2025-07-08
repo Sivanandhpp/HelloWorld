@@ -40,7 +40,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/helloworld.git
+   git clone https://github.com/sivanandhpp/helloworld.git
    cd helloworld
    ```
 
