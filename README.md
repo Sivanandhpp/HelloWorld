@@ -23,7 +23,7 @@ A cross-platform Flutter application showcasing a personal profile and social li
 ## Screenshots
 
 <!-- Add your screenshots to assets/images/ and reference them below -->
-![Home Screen](assets/images/screenshot_home.png)
+![Home Screen](readme_screenshot.png)
 <!-- ![Another Screen](assets/images/screenshot_other.png) -->
 
 ## Getting Started
